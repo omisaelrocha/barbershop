@@ -44,7 +44,7 @@
           clássica de barbearia.
         </p>
         <div class="hero-buttons">
-          <button class="btn primary-btn" id="schedule-btn">
+          <button class="btn primary-btn" id="scheduleBtn">
             <i class="fas fa-calendar-alt"></i>Faça seu agendamento
           </button>
           <a
@@ -165,7 +165,7 @@
             <h3>Telefone</h3>
             <p>(31) 91234-5678</p>
             <a href="https://wa.me/1234567890" class="btn outline-btn small">
-              <i class="fab fa-whatsapp"></i> WhatsApp
+              <i class="fab fa-whatsapp"></i>WhatsApp
             </a>
           </div>
         </div>
@@ -182,6 +182,72 @@
         </div>
       </div>
     </footer>
+
+    <div id="appointmentModal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Agende seu Horário</h2>
+        <form id="appointmentForm">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" placeholder="Seu nome" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Seu email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefone</label>
+            <input type="tel" id="phone" placeholder="Seu telefone" required />
+          </div>
+          <div class="form-group">
+            <label for="service">Serviço</label>
+            <select id="service" required>
+              <option value="" disabled selected>Escolha um Serviço</option>
+              <option value="classic-haircut">Cabelo - R$30</option>
+              <option value="beard-trim">Barba - R$20</option>
+              <option value="hot-towel-shave">Sobrancelha - R$15</option>
+              <option value="haircut-beard-combo">Combo - R$55</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Data</label>
+              <input type="date" id="date" required />
+            </div>
+            <div class="form-group">
+              <label for="time">Horário</label>
+              <select id="time" required>
+                <option value="" disabled selected>Escolha o horário</option>
+                <option value="9:00">9:00h</option>
+                <option value="10:00">10:00h</option>
+                <option value="11:00">11:00h</option>
+                <option value="12:00">12:00h</option>
+                <option value="13:00">13:00h</option>
+                <option value="14:00">14:00h</option>
+                <option value="15:00">15:00h</option>
+                <option value="16:00">16:00h</option>
+                <option value="17:00">17:00h</option>
+                <option value="18:00">18:00h</option>
+                <option value="19:00">19:00h</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="notes">Observações</label>
+            <textarea
+              id="notes"
+              placeholder="Algum pedido em especial?"
+              rows="3"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn primary-btn full-width">
+            Agendar
+          </button>
+        </form>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
