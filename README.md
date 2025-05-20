@@ -48,5 +48,5 @@ Este projeto está sob a licença MIT. Sinta-se livre para usar e modificar!
 
 ---
 
-**Autor**: Omisael Rocha  
+**Autor**: Misael Rocha  
 **GitHub**: [https://github.com/omisaelrocha](https://github.com/omisaelrocha)
